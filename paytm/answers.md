@@ -1,7 +1,8 @@
 
 _This repo is public so I didn't repeat the questions here._
 
-### Q1
+Q1
+-
 Assumptions
 - Bare minimum OS is installed/configured
 - Root access is available via SSH
@@ -14,7 +15,8 @@ Overall solution is to use Chef
   -  use chef-client daemon to keep the host compliant to defined configuration
 - use Chef Server and/or ohai (on the node) to monitor and report the status of the nodes
 
-### Q2
+Q2
+-
 Assumptions
 - Physical networking is setup/connected
 - Nodes have at least a 1Gb NIC
@@ -29,7 +31,14 @@ Overall solution is based on DHCP/PXE/TFTP (razer-server: https://github.com/pup
 Time for 1000 nodes: 1-2 weeks
 Time for 10000 nodes: 5-6 weeks
 
-### Q3
+Q3
+-
+Design Considerations
+- Multi-thread support (parallel execution)
+  - Asynchronous execution
+- Support for passwordless authentication (e.g. SSH keys)
+- Advanced logging
+  - i.e. separate logs for standard and error output
 
 ### Q4
 
