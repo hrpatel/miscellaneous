@@ -57,3 +57,4 @@ User Joe will get a permission error trying to execute this statement since he i
 
 Q7
 -
+It is possible to limit queue capacity that any single user can consume by setting the 'user-limit-factor' or 'user-limit' to a value less than 1. E.g. a value of 0.5 would restrict any user from using resources beyond half of the queue capacity.
