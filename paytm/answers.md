@@ -27,9 +27,7 @@ Overall solution is based on DHCP/PXE/TFTP (razer-server: https://github.com/pup
 - policy based provisioning
 - ability to handoff to configuration management
 
-
-Time for 1000 nodes: 1-2 weeks
-Time for 10000 nodes: 5-6 weeks
+Time for 1000 nodes: 1-2 weeks, 10000 nodes: 5-6 weeks
 
 Q3
 -
@@ -44,8 +42,8 @@ Q4
 -
 Possible Solutions
 - Manage user accounts, keys, security hardening with configuration management (e.g. Chef)
-- Install/configure single sign-on with existing identity solution (e.g. using LDAP/Active Directory) 
+- Install/configure single sign-on with existing identity solution (e.g. using sssd with LDAP/Active Directory)
 
 Q5 - Q7
-- 
-I don't have hands-on experience with Namenode HA, Hive or Yarn. These technologies are supported by another team in my Org. 
+-
+I don't have hands-on experience with Namenode HA, Hive or Yarn. These technologies are supported by other teams in my Org.
