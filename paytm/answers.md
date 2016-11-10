@@ -45,6 +45,15 @@ Possible Solutions
 - Manage user accounts, keys, security hardening with configuration management (e.g. Chef)
 - Install/configure single sign-on with existing identity solution (e.g. using sssd with LDAP/Active Directory)
 
-Q5 - Q7
+
+_Please note that I don't have hands-on experience with Namenode HA, Hive or Yarn. I researched those technologies to answer the questions below._
+Q5
 -
-I don't have hands-on experience with Namenode HA, Hive or Yarn. These technologies are supported by other teams in my Org.
+
+
+Q6
+-
+User Joe will get a permission error trying to execute this statement since he is not authorized to access the underlying storage layer. 
+
+Q7
+-
