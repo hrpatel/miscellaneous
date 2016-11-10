@@ -46,15 +46,16 @@ Possible Solutions
 - Install/configure single sign-on with existing identity solution (e.g. using sssd with LDAP/Active Directory)
 
 
-_Please note that I don't have hands-on experience with Namenode HA, Hive or Yarn. I researched those technologies to answer the questions below._
+**_Please note that I don't have hands-on experience with Namenode HA, Hive or Yarn. I researched those technologies to answer the questions below._**
+
 Q5
 -
 
 
 Q6
 -
-User Joe will get a permission error trying to execute this statement since he is not authorized to access the underlying storage layer. 
+User Joe will get a permission error trying to execute the select statement since he is not authorized to access the underlying storage layer. 
 
 Q7
 -
-It is possible to limit queue capacity that any single user can consume by setting the 'user-limit-factor' or 'user-limit' to a value less than 1. E.g. a value of 0.5 would restrict any user from using resources beyond half of the queue capacity.
+It is possible to limit queue capacity that any single user can consume by setting the 'user-limit-factor' or 'user-limit' to a value less than 1. E.g. a value of 0.5 would restrict 'Joe' from using resources beyond half of the queue capacity allowing others to utilize the queue.
