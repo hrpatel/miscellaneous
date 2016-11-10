@@ -46,6 +46,7 @@ Possible Solutions
 - Install/configure single sign-on with existing identity solution (e.g. using sssd with LDAP/Active Directory)
 
 
+---
 **_Please note that I don't have hands-on experience with Namenode HA, Hive or Yarn. I researched those technologies to answer the questions below._**
 
 Q5
