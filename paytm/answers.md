@@ -41,6 +41,10 @@ Design Considerations
   - i.e. separate logs for standard and error output
 
 ### Q4
+-
+Possible Solutions
+- Manage user accounts, keys, security hardening with configuration management (e.g. Chef)
+- Install/configure single sign-on with existing identity solution (e.g. using LDAP/Active Directory) 
 
 ### Q5
 
