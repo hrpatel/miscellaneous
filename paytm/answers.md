@@ -19,13 +19,14 @@ Q2
 -
 Assumptions
 - Physical networking is setup/connected
-- Nodes have at least a 1Gb NIC
+- Nodes have at least a 1 Gb NIC
+- DHCP/TFTP/PXE is setup, configured and validated
 
 Overall solution is based on DHCP/PXE/TFTP (razer-server: https://github.com/puppetlabs/razor-server)
 - support for bare-metal and virtual nodes
 - Able to support multiple distributions
 - policy based provisioning
-- ability to handoff to configuration management
+- supports handoff to configuration management
 
 Time for 1000 nodes: 1-2 weeks, 10000 nodes: 5-6 weeks
 
