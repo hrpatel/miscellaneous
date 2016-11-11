@@ -47,11 +47,11 @@ Possible Solutions
 
 
 ---
-**_Please note that I don't have hands-on experience with Namenode HA, Hive or Yarn. I researched those technologies to answer the questions below._**
+**_Please note that I don't have hands-on experience with Hadoop/HDFS (Namenode HA), Hive or Yarn. I researched those technologies to answer the questions below._**
 
 Q5
 -
-
+Zookeepr or ZKFC failure will result in a failure to trigger a failover. Initiate a manual failure to restore HA then you can investigate and correct any issues with Zookeeper or ZKFC. 
 
 Q6
 -
