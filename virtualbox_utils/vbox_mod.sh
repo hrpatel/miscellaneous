@@ -5,7 +5,7 @@
 openssl req -new -x509 -newkey rsa:2048 -keyout MOK.priv -outform DER -out MOK.der -nodes -days 36500 -subj "/CN=Descriptive name/"
 
 # Sign the module with the newly generated key
-for mod in vboxdrv vboxpci vboxnetadp; do
+for mod in vboxdrv vboxpci vboxnetadp vboxnetflt; do
     sudo /usr/src/linux-headers-$(uname -r)/scripts/sign-file sha256 ./MOK.priv ./MOK.der $(modinfo -n ${mod})
 done
 
@@ -17,7 +17,7 @@ echo "Reboot and run the following..."
 
 echo "
 # Load the modules
-for mod in vboxdrv vboxpci vboxnetadp; do
+for mod in vboxdrv vboxpci vboxnetadp vboxnetflt; do
     modprobe \${mod}
 done
 
